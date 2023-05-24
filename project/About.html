@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="icon" href="./Project 2.jpg">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleA.css">
+    <link rel="icon"  href="./desktop-computer.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background-color: rgb(245, 245, 225); " onload="startTime();">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <img src="./Project 2.jpg" style=" border-radius: 50%;" width="100px" height="100px" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: black; margin-left: 20px;" aria-current="page" href="./HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Summer.html">Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./winter.html">Winter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Autmun.html">Autmun</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Spring.html">Spring</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>About US</h1>
+    <p>We are a group of people who are interested in plants with seasons. We'll be giving you a brief about all kind of plants in seasons
+        If you are interested in what we do you can take a look at our website and see the plants in all seasons in our way.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div id="Fcolor">
+      <script>
+        function startTime() {
+          const date = new Date();
+          document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+          setTimeout(function() {startTime()}, 1000);
+        }  </script>
+        <p style="text-align:center ;"><i class="material-icons"  >copyright</i>All the Design Copyright For Plants In Seasones</p>
+          <p id="demo" style="position:relative ; text-align: center;" ></p>
+          
+          <p  style="text-align: center;"><a href="https://twitter.com/?lang=en"><img src="./TwitterIcon.png" width="30px" height="30px"></a>Twitter</p>
+          <p  style="text-align: center;"><a href="https://www.instagram.com/"><img src="../project/InstagramIcon.png" width="30px" height="30px"></a>instagram</p>
+  </div>  
+      
+      </footer>
+</body>
+</html>

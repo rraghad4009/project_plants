@@ -1,0 +1,51 @@
+
+body{
+    background-color:rgb(220, 236, 253);
+}
+
+h1{
+    padding-top: 5%;
+     padding-left: 46%;
+
+   }
+   .mint{
+    position: relative;
+     border: 3px;
+     padding-right:  40%;
+     margin-left:240px;
+     background-color: rgb(210, 228, 244);
+     margin-right: 18%;
+     
+   }
+   .image p{
+     position: absolute;
+     top: 50%;
+     left: 40%;
+     color:black;
+     font-size: 120%;
+     
+   }
+  
+   .basil{
+    position: relative;
+     border: 3px;
+     padding-left: 43%;
+     margin-left: 240px;
+     background-color: rgb(210, 228, 244);
+     margin-right: 18%;
+   
+   
+   }
+   .image1 p{
+     position: absolute;
+     top: 95%;
+     left: 20%;
+     color:black;
+     font-size: 120%;
+     
+  
+   }
+    li a:hover {
+       background-color:rgb(220, 236, 253);
+     }
+  

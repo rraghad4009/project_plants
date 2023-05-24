@@ -1,0 +1,123 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./Project 2.jpg">
+ <link rel="stylesheet" href="./styleH.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    </head>
+    <body style="background-color: rgb(245, 245, 225);" onload="startTime();">
+    
+         
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <img src="./Project 2.jpg" style=" border-radius: 50%;" width="100px" height="100px" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: black; margin-left: 20px;" aria-current="page" href="./HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Summer.html">Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./winter.html">Winter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Autmun.html">Autmun</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: black;" href="./Spring.html">Spring</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      
+      <a href="./winter.html"><img src="./winter.jpg" style="width: 900px;" height="600px;"></a> 
+      <div class="text">Winter Sesaon</div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="./spring.jpg" style="width: 900px;" height="600px;">
+      <div class="text">Spring Sesaon</div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+     <a href="summer.html"><img src="./summer1.jpg" style="width: 900px;" height="600px;"></a> 
+      <div class="text">Summer Season</div>
+    </div>
+    <div class="mySlides fade">
+        
+        <img src="./fall.jpg" style="width: 900px;" height="600px;">
+        <div class="text">Autumn Season </div>
+      </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <footer>
+      <div id="Fcolor">
+    <script>
+      function startTime() {
+        const date = new Date();
+        document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        setTimeout(function() {startTime()}, 1000);
+      }  </script>
+      <p style="text-align:center ;"><i class="material-icons"  >copyright</i>All the Design Copyright For Plants In Seasones</p>
+        <p id="demo" style="position:relative ; text-align: center;" ></p>
+        
+        <p  style="text-align: center;"><a href="https://twitter.com/?lang=en"><img src="./TwitterIcon.png" width="30px" height="30px"></a>Twitter</p>
+        <p  style="text-align: center;"><a href="https://www.instagram.com/"><img src="../project/InstagramIcon.png" width="30px" height="30px"></a>instagram</p>
+    </div>  
+    
+    </footer>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+    </script> 
+
+
+
+</body>
+</html>

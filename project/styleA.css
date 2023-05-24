@@ -1,0 +1,13 @@
+h1{
+  padding-top: 5%;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+#Fcolor {
+  height: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(245, 223, 182), lightyellow, pink,lightblue);
+}
+
